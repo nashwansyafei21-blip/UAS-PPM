@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Dompetku</string>
+    <string name="tab_transactions">Transaksi</string>
+    <string name="tab_stats">Statistik</string>
+    <string name="tab_group">Info Kelompok</string>
+    <string name="empty_transactions">Belum ada transaksi. Ketuk tombol + untuk menambahkan.</string>
+    <string name="add_transaction">Tambah Transaksi</string>
+    <string name="edit_transaction">Ubah Transaksi</string>
+    <string name="label_income">Pemasukan</string>
+    <string name="label_expense">Pengeluaran</string>
+    <string name="label_amount">Nominal (Rp)</string>
+    <string name="label_category">Kategori</string>
+    <string name="label_title">Judul / Keperluan</string>
+    <string name="label_notes">Catatan Tambahan</string>
+    <string name="btn_save">Simpan</string>
+    <string name="btn_delete">Hapus</string>
+    <string name="btn_cancel">Batal</string>
+    <string name="total_balance">Saldo Total</string>
+    <string name="title_about_app">Tentang Aplikasi &amp; Anggota Kelompok</string>
+    <string name="subtitle_about_app">Projek Akhir UAS - Pemrograman Mobile</string>
+    <string name="author_info_label">Daftar Anggota Kelompok:</string>
+    <string name="btn_trigger_broadcast">Kirim Test Notifikasi (Broadcast)</string>
+    <string name="search_hint">Cari transaksi...</string>
+    <string name="notification_title">Notifikasi Dompetku</string>
+    <string name="notification_desc">Laporan transaksi atau simulasi sinkronisasi data berhasil.</string>
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8"
+    tools:context=".ui.StatsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistik Pengeluaran"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Analisis pengeluaran berdasarkan kategori utama"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Category 1: Makanan -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E0E0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Makanan &amp; Minuman"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/tv_stat_makanan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Rp 0"
+                        android:textColor="#D32F2F"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_makanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:trackThickness="8dp"
+                    app:trackCornerRadius="4dp"
+                    app:indicatorColor="#FF9800"
+                    app:trackColor="#F5F5F5"
+                    android:progress="0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Category 2: Transportasi -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E0E0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transportasi"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/tv_stat_transportasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Rp 0"
+                        android:textColor="#D32F2F"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_transportasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:trackThickness="8dp"
+                    app:trackCornerRadius="4dp"
+                    app:indicatorColor="#2196F3"
+                    app:trackColor="#F5F5F5"
+                    android:progress="0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Category 3: Belanja -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E0E0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Belanja"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/tv_stat_belanja"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Rp 0"
+                        android:textColor="#D32F2F"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_belanja"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:trackThickness="8dp"
+                    app:trackCornerRadius="4dp"
+                    app:indicatorColor="#9C27B0"
+                    app:trackColor="#F5F5F5"
+                    android:progress="0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Category 4: Hiburan -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E0E0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiburan &amp; Rekreasi"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/tv_stat_hiburan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Rp 0"
+                        android:textColor="#D32F2F"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_hiburan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:trackThickness="8dp"
+                    app:trackCornerRadius="4dp"
+                    app:indicatorColor="#E91E63"
+                    app:trackColor="#F5F5F5"
+                    android:progress="0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Category 5: Lain-lain -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            app:strokeWidth="1dp"
+            app:strokeColor="#E0E0E0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lain-lain"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/tv_stat_lain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="Rp 0"
+                        android:textColor="#D32F2F"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <com.google.android.material.progressindicator.LinearProgressIndicator
+                    android:id="@+id/progress_lain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:trackThickness="8dp"
+                    app:trackCornerRadius="4dp"
+                    app:indicatorColor="#607D8B"
+                    app:trackColor="#F5F5F5"
+                    android:progress="0" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

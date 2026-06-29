@@ -1,0 +1,6 @@
+{
+  "name": "Dompetku",
+  "description": "Aplikasi pencatatan keuangan pribadi (pemasukan & pengeluaran) dengan fitur RecyclerView, Fragment, Room Database, dan Broadcast Receiver.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

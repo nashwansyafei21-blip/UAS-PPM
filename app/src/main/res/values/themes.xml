@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#00A86B</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#E8F5E9</item>
+        <item name="colorOnPrimaryContainer">#1B5E20</item>
+        <item name="colorSecondary">#2E7D32</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="android:statusBarColor">#00A86B</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+</resources>
